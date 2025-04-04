@@ -1,0 +1,74 @@
+name: spamex
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_contacts: ^1.1.9+2
+  permission_handler: ^11.0.1
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.2.2
+  url_launcher: ^6.3.1
+  flutter_launcher_icons: ^0.13.1
+  flutter_ringtone_player: ^4.0.0+4
+  flutter_sound: ^9.23.1
+  twilio_flutter: ^0.0.9
+  firebase_core: ^2.15.0  # Replace with the latest stable version if needed
+  firebase_auth: ^4.15.0  # Use the latest stable version
+  cloud_firestore: ^4.15.0  # Use the latest stable version
+  share_plus: ^10.1.4
+  telephony: ^0.2.0
+  http: ^0.13.6
+  flutter_local_notifications: ^15.1.0
+  firebase_messaging: ^14.7.10
+  image_picker: ^1.1.2
+  firebase_storage: ^11.6.5
+  flutter_image_compress: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+    
+    
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/ringtone1.mp3
+    - assets/ringtone2.mp3
+    - assets/ringtone3.mp3
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png" # Update with your logo path
+  adaptive_icon_foreground: "assets/logo.png"
+  adaptive_icon_background: "assets/logo.png"
+
